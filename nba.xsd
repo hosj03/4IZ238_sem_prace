@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="vse.cz:hosj03:nba"
+    targetNamespace="vse.cz:hosj03:nba" elementFormDefault="qualified"
+    xmlns:n="vse.cz:hosj03:nba"> 
+    
+    <xs:element name="nba" type="nbaTyp">
+        <xs:keyref refer="unikatniTym" name="ExistenceTymu">
+            <xs:selector xpath="n:zapasy/n:zapas/n:hoste|
+                n:zapasy/n:zapas/n:domaci"/>
+            <xs:field xpath="@id"></xs:field>
+        </xs:keyref>
+        <xs:keyref refer="unikatniHraci" name="ExistenceHrace">
+            <xs:selector xpath="n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:kos/n:hrac |
+                n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:faul/n:hrac"/>
+            <xs:field xpath="@id"></xs:field>
+        </xs:keyref>
+    </xs:element>
+    
+    <xs:complexType name="nbaTyp">
+        <xs:sequence>
+            <xs:element name="tymy" type="tymyTyp">
+                <xs:key name="unikatniTym">
+                    <xs:selector xpath="n:tym"/>
+                    <xs:field xpath="@id"/>
+                </xs:key>
+                <xs:key name="unikatniHraci">
+                    <xs:selector xpath="n:tym/n:hraci/n:hrac"></xs:selector>
+                    <xs:field xpath="@id"></xs:field>
+                </xs:key>
+            </xs:element>
+            <xs:element name="zapasy" type="zapasyTyp" maxOccurs="unbounded">
+                <xs:unique name="unikatniZapas">
+                    <xs:selector xpath="n:zapas"></xs:selector>
+                    <xs:field xpath="n:domaci/@id"></xs:field>
+                    <xs:field xpath="n:hoste/@id"></xs:field>
+                    <xs:field xpath="n:datum"></xs:field>
+                </xs:unique>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tymyTyp">
+        <xs:sequence>
+            <xs:element name="tym" type="tymTyp" maxOccurs="unbounded" minOccurs="2"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tymTyp">
+        <xs:sequence>
+            <xs:element name="nazev" type="xs:string"/>
+            <xs:element name="zkratka" type="zkratkaTyp"/>
+            <xs:element name="hraci" type="hraciTyp"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="idTyp" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="idTyp">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="[1-9]*[0-9]+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="zkratkaTyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\s*[A-Z]{3}\s*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="hraciTyp">
+        <xs:sequence>
+            <xs:element name="hrac" type="hracTyp" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="hracTyp">
+        <xs:sequence>
+            <xs:element name="jmeno" type="xs:string"/>
+            <xs:element name="prijmeni" type="xs:string"/>
+            <xs:element name="cisloDresu" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="idTyp" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="zapasyTyp">
+        <xs:sequence>
+            <xs:element name="zapas" type="zapasTyp" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="sezonaZacatek" type="xs:date"/>
+        <xs:attribute name="sezonaKonec" type="xs:date"/>
+    </xs:complexType>
+    
+    <xs:complexType name="zapasTyp">
+        <xs:sequence>
+            <xs:element name="domaci" type="zapasTym"/>
+            <xs:element name="hoste" type="zapasTym"/>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="vysledneSkore" type="vysledneSkoreTyp"/>
+            <xs:element name="prubeh" type="prubehTyp"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="zapasTym">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="vysledneSkoreTyp">
+        <xs:sequence>
+            <xs:element name="domaci" type="xs:int"/>
+            <xs:element name="hoste" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="prubehTyp">
+        <xs:sequence>
+            <xs:element name="ctvrtina" type="ctvrtinaTyp" maxOccurs="4"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ctvrtinaTyp">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element name="faul" type="faulTyp"/>
+                    <xs:element name="kos" type="kosTyp"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="kos" type="kosTyp"/>
+                </xs:sequence>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="poradi" type="poradiTyp" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="poradiTyp">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="[1-4]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="faulTyp">
+        <xs:sequence>
+            <xs:element name="cas" type="casTyp"/>
+            <xs:element name="hrac" type="hraHracTyp"/>
+        </xs:sequence>
+        <xs:attribute name="typ" type="faulTypTypTyp" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="faulTypTypTyp">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="osobni"/>
+            <xs:enumeration value="nesportovni"/>
+            <xs:enumeration value="technicky"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="kosTyp">
+        <xs:sequence>
+            <xs:element name="cas" type="casTyp"/>
+            <xs:element name="body" type="xs:int"/>
+            <xs:element name="tym" type="xs:string"/>
+            <xs:element name="hrac" type="hraHracTyp"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="casTyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\s*([0][0-9]:[0-5][0-9]|[1][01]:[0-5][0-9]|12:00)\s*"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="hraHracTyp">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+</xs:schema>

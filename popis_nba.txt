@@ -1,0 +1,1 @@
+XML dokument eviduje NBA, ve kterém jsou týmy a jejich zápasy. Týmy v sobě obsahují název, zkratku a hráče, které za ně hrajou. V zápasech jsou jednotlivé zápasy, které mají elementy domácí, hosté, datum, výsledné skóre zápasu a průběh zápasu.

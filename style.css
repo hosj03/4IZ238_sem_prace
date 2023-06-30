@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(200, 130, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+dl,ul,ol {
+    list-style-type: none;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+
+.tym, .zapas {
+    background-color: rgb(40, 150, 240);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.zapas>h2 {
+    text-align: center;
+}
+
+.kos, .faul {
+    margin: 0.5em auto;
+    padding: 1em;
+}
+
+.hoste {
+    background-color: rgb(20, 150, 30);
+    color: white;
+    text-align: right;
+    border-right: solid 25px rgb(15, 80, 0);
+    padding-left: 41px;
+}
+
+.domaci {
+    background-color: rgb(240, 45, 230);
+    color: white;
+    text-align: left;
+    border-left: solid 25px rgb(150, 0, 180);
+    padding-right: 41px;
+}
+
+.faul {
+    background-color: rgb(168, 17, 17);
+    color: white;
+    text-align: center;
+}
+
+.ctvrtina {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.kos>h3, .faul>h3 {
+    text-align: center;
+    
+}
+
+.hrac {
+    background-color: rgb(31, 0, 209);
+    width: 10em;
+    min-height: 10em;
+    margin: 1em;
+    text-align: center;
+    padding-top: 0.5em;
+    color: white;
+}
+
+.hrac dd {
+    margin: 0 0 0.5em 0;
+}
+
+#hraci {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

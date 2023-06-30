@@ -1,0 +1,126 @@
+<html xmlns:ng="http://docbook.org/docbook-ng"><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Dokumentace semetr&aacute;ln&iacute; pr&aacute;ce</title><meta name="generator" content="DocBook XSL Stylesheets V1.79.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="cs" class="book"><div class="titlepage"><div><div><h1 class="title"><a name="d5e1"></a>Dokumentace semetr&aacute;ln&iacute; pr&aacute;ce</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Jakub</span> <span class="othername">
+                    <span class="quote">&#8222;<span class="quote">
+                        hosj03
+                    </span>&#8220;</span>
+                </span> <span class="surname">Ho&#353;ek</span></h3></div></div></div><hr></div><div class="toc"><p><b>Obsah</b></p><dl class="toc"><dt><span class="chapter"><a href="#d5e10">1. 
+            Pou&#382;it&eacute; elementy a atributy
+        </a></span></dt><dd><dl><dt><span class="section"><a href="#d5e12">
+                Elementy
+            </a></span></dt><dt><span class="section"><a href="#d5e98">
+                Atributy
+            </a></span></dt></dl></dd><dt><span class="chapter"><a href="#d5e116">2. 
+            Validace uk&aacute;zkov&eacute;ho XML dokumentu
+        </a></span></dt><dd><dl><dt><span class="section"><a href="#d5e122">XML sch&eacute;ma</a></span></dt><dt><span class="section"><a href="#d5e137">Schematron</a></span></dt></dl></dd><dt><span class="chapter"><a href="#d5e147">3. XSL transformace</a></span></dt><dd><dl><dt><span class="section"><a href="#d5e149">
+                Transformace do HTML
+            </a></span></dt><dt><span class="section"><a href="#d5e159">
+                Transformace do PDF
+            </a></span></dt></dl></dd><dt><span class="index"><a href="#d5e169">Rejst&#345;&iacute;k</a></span></dt></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="d5e10"></a>Kapitola 1. 
+            Pou&#382;it&eacute; elementy a atributy
+        </h1></div></div></div><div class="toc"><p><b>Obsah</b></p><dl class="toc"><dt><span class="section"><a href="#d5e12">
+                Elementy
+            </a></span></dt><dt><span class="section"><a href="#d5e98">
+                Atributy
+            </a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e12"></a>
+                Elementy<a class="indexterm" name="d5e14"></a>
+            </h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>nba</p><p>ko&#345;enov&yacute; element uk&aacute;zkov&eacute;ho xml dokumentu</p></li><li class="listitem"><p>tymy</p><p>d&iacute;t&#283; elementu nba, kter&eacute; v sob&#283; uchov&aacute;v&aacute; elementy tym</p></li><li class="listitem"><p>tym</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>d&iacute;t&#283; elemetu tymy, kter&eacute; obsahuje elementy nazev, zkratka, hraci a atribut id, m&#367;&#382;e se opakovat</p></li><li class="listitem"><p>d&iacute;t&#283; elementu kos, kter&eacute; v sob&#283; uchov&aacute;v&aacute; n&aacute;zev nebo zkratku t&yacute;mu</p></li></ul></div></li><li class="listitem"><p>nazev</p><p>d&iacute;t&#283; elementu tym. kter&eacute; obsahuje n&aacute;zev t&yacute;mu v textov&eacute; podob&#283;</p></li><li class="listitem"><p>zkratka</p><p>d&iacute;t&#283; elementu tym. kter&eacute; obsahuje zkratku t&yacute;mu v textov&eacute; podob&#283;</p></li><li class="listitem"><p>hraci</p><p>d&iacute;t&#283; elementu tym, kter&eacute; v sob&#283; uchov&aacute;v&aacute; elementy hrac</p></li><li class="listitem"><p>hrac</p><p>d&iacute;t&#283; elementu hraci, kter&eacute; obsahuje elementy jmeno, prijmeni, cisloDresu a atribut id, m&#367;&#382;e se opakovat</p></li><li class="listitem"><p>jmeno</p><p>d&iacute;t&#283; elementu hrac, kter&eacute; obsahuje k&#345;estn&iacute; jm&eacute;no hr&aacute;&#269;e v textov&eacute; podob&#283;</p></li><li class="listitem"><p>prijmeni</p><p>d&iacute;t&#283; elementu hrac, kter&eacute; obsahuje p&#345;&iacute;jmen&iacute; hr&aacute;&#269;e v textov&eacute; podob&#283;</p></li><li class="listitem"><p>cisloDresu</p><p>d&iacute;t&#283; elementu hrac, kter&eacute; obsahuje &#269;&iacute;slo dresu hr&aacute;&#269;e v &#269;&iacute;seln&eacute; podob&#283;</p></li><li class="listitem"><p>zapasy</p><p>d&iacute;t&#283; elementu nba, kter&eacute; v sob&#283; uchov&aacute;v&aacute; elementy zapas a m&aacute; atributy sezonaZacatek, sezonaKonec</p></li><li class="listitem"><p>zapas</p><p>d&iacute;t&#283; elementu zapasy, kter&eacute; obsahuje elementy domaci, hoste, datum, vysledneSkore, prubeh, m&#367;&#382;e se opakovat</p></li><li class="listitem"><p>domaci</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>d&iacute;t&#283; elementu zapas, kter&eacute; obsahuje n&aacute;zev nebo zkratku t&yacute;mu v textov&eacute; podob&#283; a obsahuje atribut id</p></li><li class="listitem"><p>d&iacute;t&#283; elementu vysledne skore, kter&eacute; v sob&#283; uchov&aacute;v&aacute; kone&#269;n&yacute; stav sk&oacute;re dom&aacute;c&iacute;ho t&yacute;mu v &#269;&iacute;seln&eacute; podob&#283;</p></li></ul></div></li><li class="listitem"><p>hoste</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>d&iacute;t&#283; elementu zapas, kter&eacute; obsahuje n&aacute;zev nebo zkratku t&yacute;mu v textov&eacute; podob&#283; a obsahuje atribut id</p></li><li class="listitem"><p>d&iacute;t&#283; elementu vysledne skore, kter&eacute; v sob&#283; uchov&aacute;v&aacute; kone&#269;n&yacute; stav sk&oacute;re hostuj&iacute;c&iacute;ho t&yacute;mu v &#269;&iacute;seln&eacute; podob&#283;</p></li></ul></div></li><li class="listitem"><p>datum</p><p>d&iacute;t&#283; elementu zapas, kter&eacute; obsahuje datum, kdy se z&aacute;pas odehr&aacute;l v datumov&eacute; podob&#283;</p></li><li class="listitem"><p>vysledneSkore</p><p>d&iacute;t&#283; elementu zapas, kter&eacute; obsahuje elementy domaci a hoste</p></li><li class="listitem"><p>prubeh</p><p>d&iacute;t&#283; elementu zapas, kter&eacute; obasuje element ctvrtina</p></li><li class="listitem"><p>ctvrtina</p><p>d&iacute;t&#283; elementu prubeh, kter&eacute; obsahuje elementy kos nebo faul a atribut poradi, m&#367;&#382;e se opakovat 4 kr&aacute;t</p></li><li class="listitem"><p>kos</p><p>d&iacute;t&#283; elementu ctvrtina, kter&eacute; obsahuje elementy cas, body, tym a hrac, m&#367;&#382;e se opakovat</p></li><li class="listitem"><p>faul</p><p>d&iacute;t&#283; elementu ctvrtina, kter&eacute; obsahuje elementy cas, hrac a atribut typ, m&#367;&#382;e se opakovat</p></li><li class="listitem"><p>cas</p><p>d&iacute;t&#283; elementu faul nebo kos, kter&eacute; v sob&#283; uchov&aacute;v&aacute; &#269;asovou hodnotu dan&eacute; akce v &#269;asov&eacute; podob&#283; a m&#367;&#382;e nab&yacute;vat hodnoty a&#382; 12:00</p></li><li class="listitem"><p>body</p><p>d&iacute;t&#283; elementu kos, kter&eacute; v sob&#283; uchov&aacute;v&aacute; hodnotu v&yacute;&#353;e ko&#353;e v &#269;&iacute;seln&eacute; podob&#283;</p></li><li class="listitem"><p>hrac</p><p>d&iacute;t&#283; elementu kos nebo faul, kter&eacute; v sob&#283; uchov&aacute;v&aacute; hodnotu jm&eacute;na a p&#345;&iacute;jmen&iacute; v textov&eacute; podob&#283; a atribut id</p></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e98"></a>
+                Atributy
+            </h2></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>id</p><p>atribut, kter&yacute; je pou&#382;it pro refen&#269;n&iacute; kontroly v &#269;&iacute;seln&eacute; podob&#283;</p></li><li class="listitem"><p>sezonaZacatek</p><p>atribut, kter&yacute; ud&aacute;v&aacute; za&#269;&aacute;tek sez&oacute;ny v datumov&eacute; podob&#283;</p></li><li class="listitem"><p>sezonaKonec&gt;</p><p>atribut, kter&yacute; ud&aacute;v&aacute; konec sez&oacute;ny v datumov&eacute; podob&#283;</p></li><li class="listitem"><p>poradi</p><p>atribut, kter&yacute; ud&aacute;v&aacute; o kolik&aacute;tou &#269;tvrtinu se jedn&aacute; v &#269;&iacute;seln&eacute; podob&#283;</p></li><li class="listitem"><p>typ</p><p>atribut, kter&yacute; ud&aacute;v&aacute; o jak&yacute; typ faulu se jedn&aacute; v textov&eacute; podob&#283;, jedn&aacute; se o enumeraci</p></li></ul></div></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="d5e116"></a>Kapitola 2. 
+            Validace uk&aacute;zkov&eacute;ho XML<a class="indexterm" name="d5e118"></a> dokumentu<a class="indexterm" name="d5e120"></a>
+        </h1></div></div></div><div class="toc"><p><b>Obsah</b></p><dl class="toc"><dt><span class="section"><a href="#d5e122">XML sch&eacute;ma</a></span></dt><dt><span class="section"><a href="#d5e137">Schematron</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e122"></a>XML sch&eacute;ma<a class="indexterm" name="d5e124"></a></h2></div></div></div><p>XML sch&eacute;ma konktroluje strukturu a n&#283;kter&eacute; hodnoty uk&aacute;zkov&eacute;ho XML souboru, kter&eacute; v p&#345;&iacute;pad&#283; neplatnosti vyp&iacute;&#353;e.</p><p>Uk&aacute;zka omezen&iacute; typ&#367; faulu<a class="indexterm" name="d5e128"></a>:</p><pre class="programlisting">&lt;xs:simpleType name="faulTypTypTyp"&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+        &lt;xs:enumeration value="osobni"/&gt;
+        &lt;xs:enumeration value="nesportovni"/&gt;
+        &lt;xs:enumeration value="technicky"/&gt;
+    &lt;/xs:restriction&gt;
+&lt;/xs:simpleType&gt;</pre><p>Uk&aacute;zka kontroly existence hr&aacute;&#269;e v n&#283;jak&eacute;m t&yacute;mu:<a class="indexterm" name="d5e133"></a></p><pre class="programlisting">&lt;xs:keyref refer="unikatniHraci" name="ExistenceHrace"&gt;
+    &lt;xs:selector xpath="n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:kos/n:hrac |
+        n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:faul/n:hrac"/&gt;
+    &lt;xs:field xpath="@id"&gt;&lt;/xs:field&gt;
+&lt;/xs:keyref&gt;</pre></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e137"></a>Schematron<a class="indexterm" name="d5e139"></a></h2></div></div></div><p>
+                Schematron kontroluje spr&aacute;vnost zadan&yacute;ch hodnot v uk&aacute;zkov&eacute;m XML souboru, kter&eacute; v p&#345;&iacute;pad&#283; nespr&aacute;vnosti vyp&iacute;&#353;e.
+            </p><p>Uk&aacute;zka kontroly datumu za&#269;&aacute;tku a konce sez&oacute;ny:<a class="indexterm" name="d5e143"></a></p><pre class="programlisting">&lt;sch:pattern&gt;
+    &lt;sch:title&gt;Kontrola za&#269;&aacute;tku a konce sez&oacute;ny&lt;/sch:title&gt;
+    &lt;sch:rule context="n:zapasy"&gt;
+        &lt;sch:report test="xs:date(@sezonaZacatek) gt xs:date(@sezonaKonec)"&gt;
+            Sez&oacute;na nem&#367;&#382;e skon&#269;it d&#345;&iacute;v ne&#382; za&#269;ne.
+        &lt;/sch:report&gt;
+    &lt;/sch:rule&gt;
+&lt;/sch:pattern&gt;</pre></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="d5e147"></a>Kapitola 3. XSL transformace</h1></div></div></div><div class="toc"><p><b>Obsah</b></p><dl class="toc"><dt><span class="section"><a href="#d5e149">
+                Transformace do HTML
+            </a></span></dt><dt><span class="section"><a href="#d5e159">
+                Transformace do PDF
+            </a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e149"></a>
+                Transformace do HTML
+            </h2></div></div></div><p>
+                Transformuje uk&aacute;zkov&yacute; XML<a class="indexterm" name="d5e152"></a> soubor do struktury HTML<a class="indexterm" name="d5e154"></a> souboru(&#367;). V tomto p&#345;&iacute;pad&#283; vytv&aacute;&#345;&iacute; jednu hlavn&iacute; str&aacute;nku p&#345;es kterou se dostaneme na ostatn&iacute;.
+                Dal&#353;&iacute; generovan&eacute; str&aacute;nky jsou dvoj&iacute;ho typu (rozpis, pr&#367;b&#283;h). Rozpis v sob&#283; obsahuje hr&aacute;&#269;e kliknut&eacute;ho t&yacute;mu. Pr&#367;b&#283;h zobrazuje pr&#367;b&#283;h kliknut&eacute;ho z&aacute;pasu.
+            </p><p>Uk&aacute;zka vytvo&#345;en&iacute; nov&eacute; str&aacute;nky pro ka&#382;d&eacute; hr&aacute;&#269;e t&yacute;mu:</p><pre class="programlisting">&lt;xsl:template match="n:tym/n:hraci"&gt;
+    &lt;xsl:result-document href="{generate-id()}.html" format="html5"&gt;
+        &lt;html lang="cs"&gt;
+            &lt;head&gt;
+                &lt;title&gt;
+                    &lt;xsl:text&gt;Soupiska&lt;/xsl:text&gt;
+                &lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css"/&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;a href="nba_hl.html"&gt;Hlavn&iacute; str&aacute;nka&lt;/a&gt;
+                &lt;h1&gt;
+                    &lt;xsl:value-of select="../n:nazev"/&gt;
+                &lt;/h1&gt;
+                &lt;ul id="hraci"&gt;
+                    &lt;xsl:apply-templates/&gt;
+                &lt;/ul&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    &lt;/xsl:result-document&gt;
+&lt;/xsl:template&gt;</pre></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e159"></a>
+                Transformace do PDF
+            </h2></div></div></div><p>
+                Transformuje uk&aacute;zkov&yacute; XML<a class="indexterm" name="d5e162"></a> soubor do struktury FO souboru(&#367;). V tomto p&#345;&iacute;pad&#283; se vytv&aacute;&#345;&iacute; jeden PDF<a class="indexterm" name="d5e164"></a> soubour.
+                Je rozd&#283;len na seznam t&yacute;m&#367;, jejich soupisky, sez&oacute;ny a jej&iacute; z&aacute;pasy.
+            </p><p>
+                Uk&aacute;zka vytvo&#345;en&iacute; &#345;&aacute;dku tabulky p&#345;i faulu:
+            </p><pre class="programlisting">&lt;xsl:template match="n:faul"&gt;
+    &lt;fo:table-row&gt;
+        &lt;xsl:attribute name="background-color"&gt;
+            &lt;xsl:text&gt;rgb(255, 90, 90)&lt;/xsl:text&gt;
+        &lt;/xsl:attribute&gt;
+        &lt;fo:table-cell&gt;
+            &lt;fo:block&gt;
+                &lt;xsl:value-of select="n:cas"/&gt;
+            &lt;/fo:block&gt;
+        &lt;/fo:table-cell&gt;
+        &lt;fo:table-cell&gt;
+            &lt;fo:block&gt;
+                &lt;xsl:value-of select="n:hrac"/&gt;
+            &lt;/fo:block&gt;
+        &lt;/fo:table-cell&gt;
+        &lt;fo:table-cell&gt;
+            &lt;fo:block&gt;
+                faul
+            &lt;/fo:block&gt;
+        &lt;/fo:table-cell&gt;
+        &lt;fo:table-cell&gt;
+            &lt;fo:block&gt;
+                &lt;xsl:value-of select="@typ"/&gt;
+            &lt;/fo:block&gt;
+        &lt;/fo:table-cell&gt;
+    &lt;/fo:table-row&gt;
+&lt;/xsl:template&gt;</pre></div></div><div class="index"><div class="titlepage"><div><div><h1 class="title"><a name="d5e169"></a>Rejst&#345;&iacute;k</h1></div></div></div><div xmlns:xlink="http://www.w3.org/1999/xlink" class="index"><div class="indexdiv"><h3>K</h3><dl><dt id="ientry-d5e133">kontrola</dt><dd><dl><dt>datum, <a class="indexterm" href="#d5e137">Schematron</a></dt><dt>hr&aacute;&#269;, <a class="indexterm" href="#d5e122">XML sch&eacute;ma</a></dt></dl></dd></dl></div><div class="indexdiv"><h3>O</h3><dl><dt id="ientry-d5e128">omezen&iacute;</dt><dd><dl><dt>faul, <a class="indexterm" href="#d5e122">XML sch&eacute;ma</a></dt></dl></dd></dl></div><div class="indexdiv"><h3>S</h3><dl><dt id="ientry-d5e124">sch&eacute;ma, <a class="indexterm" href="#d5e122">XML sch&eacute;ma</a></dt><dt id="ientry-d5e139">schematron, <a class="indexterm" href="#d5e137">Schematron</a></dt></dl></div><div class="indexdiv"><h3>T</h3><dl><dt id="ientry-d5e154">transformace</dt><dd><dl><dt>html, <a class="indexterm" href="#d5e149">
+                Transformace do HTML
+            </a></dt><dt>pdf, <a class="indexterm" href="#d5e159">
+                Transformace do PDF
+            </a></dt></dl></dd></dl></div><div class="indexdiv"><h3>V</h3><dl><dt id="ientry-d5e120">validace, <a class="indexterm" href="#d5e116">
+            Validace uk&aacute;zkov&eacute;ho XML dokumentu
+        </a></dt></dl></div><div class="indexdiv"><h3>X</h3><dl><dt id="ientry-d5e14">xml, <a class="indexterm" href="#d5e12">
+                Elementy
+            </a>, <a class="indexterm" href="#d5e116">
+            Validace uk&aacute;zkov&eacute;ho XML dokumentu
+        </a>, <a class="indexterm" href="#d5e149">
+                Transformace do HTML
+            </a>, <a class="indexterm" href="#d5e159">
+                Transformace do PDF
+            </a></dt></dl></div></div></div></div></body></html>

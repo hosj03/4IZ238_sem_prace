@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="cs">
+    <info>
+        <title>Dokumentace semetrální práce</title>
+        <author>
+            <personname>
+                <firstname>Jakub</firstname>
+                <surname>Hošek</surname>
+                <othername>
+                    <quote>
+                        hosj03
+                    </quote>
+                </othername>
+            </personname>
+        </author>
+    </info>
+    
+    <chapter>
+        <title>
+            Použité elementy a atributy
+        </title>
+        <section>
+            <title>
+                Elementy<indexterm><primary>xml</primary></indexterm>
+            </title>
+            <itemizedlist>
+                <listitem>
+                    <para>nba</para>
+                    <para>kořenový element ukázkového xml dokumentu</para>
+                </listitem>
+                <listitem>
+                    <para>tymy</para>
+                    <para>dítě elementu nba, které v sobě uchovává elementy tym</para>
+                </listitem>
+                <listitem>
+                    <para>tym</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>dítě elemetu tymy, které obsahuje elementy nazev, zkratka, hraci a atribut id, může se opakovat</para>
+                        </listitem>
+                        <listitem>
+                            <para>dítě elementu kos, které v sobě uchovává název nebo zkratku týmu</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>nazev</para>
+                    <para>dítě elementu tym. které obsahuje název týmu v textové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>zkratka</para>
+                    <para>dítě elementu tym. které obsahuje zkratku týmu v textové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>hraci</para>
+                    <para>dítě elementu tym, které v sobě uchovává elementy hrac</para>
+                </listitem>
+                <listitem>
+                    <para>hrac</para>
+                    <para>dítě elementu hraci, které obsahuje elementy jmeno, prijmeni, cisloDresu a atribut id, může se opakovat</para>
+                </listitem>
+                <listitem>
+                    <para>jmeno</para>
+                    <para>dítě elementu hrac, které obsahuje křestní jméno hráče v textové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>prijmeni</para>
+                    <para>dítě elementu hrac, které obsahuje příjmení hráče v textové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>cisloDresu</para>
+                    <para>dítě elementu hrac, které obsahuje číslo dresu hráče v číselné podobě</para>
+                </listitem>
+                <listitem>
+                    <para>zapasy</para>
+                    <para>dítě elementu nba, které v sobě uchovává elementy zapas a má atributy sezonaZacatek, sezonaKonec</para>
+                </listitem>
+                <listitem>
+                    <para>zapas</para>
+                    <para>dítě elementu zapasy, které obsahuje elementy domaci, hoste, datum, vysledneSkore, prubeh, může se opakovat</para>
+                </listitem>
+                <listitem>
+                    <para>domaci</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>dítě elementu zapas, které obsahuje název nebo zkratku týmu v textové podobě a obsahuje atribut id</para>
+                        </listitem>
+                        <listitem>
+                            <para>dítě elementu vysledne skore, které v sobě uchovává konečný stav skóre domácího týmu v číselné podobě</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>hoste</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>dítě elementu zapas, které obsahuje název nebo zkratku týmu v textové podobě a obsahuje atribut id</para>
+                        </listitem>
+                        <listitem>
+                            <para>dítě elementu vysledne skore, které v sobě uchovává konečný stav skóre hostujícího týmu v číselné podobě</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>datum</para>
+                    <para>dítě elementu zapas, které obsahuje datum, kdy se zápas odehrál v datumové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>vysledneSkore</para>
+                    <para>dítě elementu zapas, které obsahuje elementy domaci a hoste</para>
+                </listitem>
+                <listitem>
+                    <para>prubeh</para>
+                    <para>dítě elementu zapas, které obasuje element ctvrtina</para>
+                </listitem>
+                <listitem>
+                    <para>ctvrtina</para>
+                    <para>dítě elementu prubeh, které obsahuje elementy kos nebo faul a atribut poradi, může se opakovat 4 krát</para>
+                </listitem>
+                <listitem>
+                    <para>kos</para>
+                    <para>dítě elementu ctvrtina, které obsahuje elementy cas, body, tym a hrac, může se opakovat</para>
+                </listitem>
+                <listitem>
+                    <para>faul</para>
+                    <para>dítě elementu ctvrtina, které obsahuje elementy cas, hrac a atribut typ, může se opakovat</para>
+                </listitem>
+                <listitem>
+                    <para>cas</para>
+                    <para>dítě elementu faul nebo kos, které v sobě uchovává časovou hodnotu dané akce v časové podobě a může nabývat hodnoty až 12:00</para>
+                </listitem>
+                <listitem>
+                    <para>body</para>
+                    <para>dítě elementu kos, které v sobě uchovává hodnotu výše koše v číselné podobě</para>
+                </listitem>
+                <listitem>
+                    <para>hrac</para>
+                    <para>dítě elementu kos nebo faul, které v sobě uchovává hodnotu jména a příjmení v textové podobě a atribut id</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>
+                Atributy
+            </title>
+            <itemizedlist>
+                <listitem>
+                    <para>id</para>
+                    <para>atribut, který je použit pro refenční kontroly v číselné podobě</para>
+                </listitem>
+                <listitem>
+                    <para>sezonaZacatek</para>
+                    <para>atribut, který udává začátek sezóny v datumové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>sezonaKonec></para>
+                    <para>atribut, který udává konec sezóny v datumové podobě</para>
+                </listitem>
+                <listitem>
+                    <para>poradi</para>
+                    <para>atribut, který udává o kolikátou čtvrtinu se jedná v číselné podobě</para>
+                </listitem>
+                <listitem>
+                    <para>typ</para>
+                    <para>atribut, který udává o jaký typ faulu se jedná v textové podobě, jedná se o enumeraci</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+    </chapter>
+    
+    <chapter>
+        <title>
+            Validace ukázkového XML<indexterm><primary>xml</primary></indexterm> dokumentu<indexterm><primary>validace</primary></indexterm>
+        </title>
+        <section>
+            <title>XML schéma<indexterm><primary>schéma</primary></indexterm></title>
+            <para>XML schéma konktroluje strukturu a některé hodnoty ukázkového XML souboru, které v případě neplatnosti vypíše.</para>
+            <para>Ukázka omezení typů faulu<indexterm><primary>omezení</primary><secondary>faul</secondary></indexterm>:</para>
+            <programlisting><![CDATA[<xs:simpleType name="faulTypTypTyp">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="osobni"/>
+        <xs:enumeration value="nesportovni"/>
+        <xs:enumeration value="technicky"/>
+    </xs:restriction>
+</xs:simpleType>]]></programlisting>
+            <para>Ukázka kontroly existence hráče v nějakém týmu:<indexterm><primary>kontrola</primary><secondary>hráč</secondary></indexterm></para>
+            <programlisting><![CDATA[<xs:keyref refer="unikatniHraci" name="ExistenceHrace">
+    <xs:selector xpath="n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:kos/n:hrac |
+        n:zapasy/n:zapas/n:prubeh/n:ctvrtina/n:faul/n:hrac"/>
+    <xs:field xpath="@id"></xs:field>
+</xs:keyref>]]></programlisting>
+        </section>
+        <section>
+            <title>Schematron<indexterm><primary>schematron</primary></indexterm></title>
+            <para>
+                Schematron kontroluje správnost zadaných hodnot v ukázkovém XML souboru, které v případě nesprávnosti vypíše.
+            </para>
+            <para>Ukázka kontroly datumu začátku a konce sezóny:<indexterm><primary>kontrola</primary><secondary>datum</secondary></indexterm></para>
+            <programlisting ><![CDATA[<sch:pattern>
+    <sch:title>Kontrola začátku a konce sezóny</sch:title>
+    <sch:rule context="n:zapasy">
+        <sch:report test="xs:date(@sezonaZacatek) gt xs:date(@sezonaKonec)">
+            Sezóna nemůže skončit dřív než začne.
+        </sch:report>
+    </sch:rule>
+</sch:pattern>]]></programlisting>
+        </section>
+    </chapter>
+    
+    <chapter>
+        <title>XSL transformace</title>
+        <section>
+            <title>
+                Transformace do HTML
+            </title>
+            <para>
+                Transformuje ukázkový XML<indexterm><primary>xml</primary></indexterm> soubor do struktury HTML<indexterm><primary>transformace</primary><secondary>html</secondary></indexterm> souboru(ů). V tomto případě vytváří jednu hlavní stránku přes kterou se dostaneme na ostatní.
+                Další generované stránky jsou dvojího typu (rozpis, průběh). Rozpis v sobě obsahuje hráče kliknutého týmu. Průběh zobrazuje průběh kliknutého zápasu.
+            </para>
+            <para>Ukázka vytvoření nové stránky pro každé hráče týmu:</para>
+            <programlisting><![CDATA[<xsl:template match="n:tym/n:hraci">
+    <xsl:result-document href="{generate-id()}.html" format="html5">
+        <html lang="cs">
+            <head>
+                <title>
+                    <xsl:text>Soupiska</xsl:text>
+                </title>
+                <link rel="stylesheet" href="style.css"/>
+            </head>
+            <body>
+                <a href="nba_hl.html">Hlavní stránka</a>
+                <h1>
+                    <xsl:value-of select="../n:nazev"/>
+                </h1>
+                <ul id="hraci">
+                    <xsl:apply-templates/>
+                </ul>
+            </body>
+        </html>
+    </xsl:result-document>
+</xsl:template>]]></programlisting>
+        </section>
+        <section>
+            <title>
+                Transformace do PDF
+            </title>
+            <para>
+                Transformuje ukázkový XML<indexterm><primary>xml</primary></indexterm> soubor do struktury FO souboru(ů). V tomto případě se vytváří jeden PDF<indexterm><primary>transformace</primary><secondary>pdf</secondary></indexterm> soubour.
+                Je rozdělen na seznam týmů, jejich soupisky, sezóny a její zápasy.
+            </para>
+            <para>
+                Ukázka vytvoření řádku tabulky při faulu:
+            </para>
+            <programlisting><![CDATA[<xsl:template match="n:faul">
+    <fo:table-row>
+        <xsl:attribute name="background-color">
+            <xsl:text>rgb(255, 90, 90)</xsl:text>
+        </xsl:attribute>
+        <fo:table-cell>
+            <fo:block>
+                <xsl:value-of select="n:cas"/>
+            </fo:block>
+        </fo:table-cell>
+        <fo:table-cell>
+            <fo:block>
+                <xsl:value-of select="n:hrac"/>
+            </fo:block>
+        </fo:table-cell>
+        <fo:table-cell>
+            <fo:block>
+                faul
+            </fo:block>
+        </fo:table-cell>
+        <fo:table-cell>
+            <fo:block>
+                <xsl:value-of select="@typ"/>
+            </fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+</xsl:template>]]></programlisting>
+        </section>
+    </chapter>
+    
+    <index/>
+    
+</book>

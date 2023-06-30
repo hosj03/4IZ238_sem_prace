@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="nba.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<nba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="nba.xsd" xmlns="vse.cz:hosj03:nba">
+    <tymy>
+        <tym id="1">
+            <nazev>Golden State Warriors</nazev>
+            <zkratka>GSW</zkratka>
+            <hraci>
+                <hrac id="1">
+                    <jmeno>Draymond</jmeno>
+                    <prijmeni>Green</prijmeni>
+                    <cisloDresu>23</cisloDresu>
+                </hrac>
+                <hrac id="8">
+                    <jmeno>Stephen</jmeno>
+                    <prijmeni>Curry</prijmeni>
+                    <cisloDresu> 30 </cisloDresu>
+                </hrac>
+                <hrac id="9">
+                    <jmeno>Klay</jmeno>
+                    <prijmeni>Thomson</prijmeni>
+                    <cisloDresu> 11 </cisloDresu>
+                </hrac>
+                <hrac id="10">
+                    <jmeno>Andrew</jmeno>
+                    <prijmeni>Wiggins</prijmeni>
+                    <cisloDresu> 22 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="2">
+            <nazev>Los Angles Lakers</nazev>
+            <zkratka>LAL</zkratka>
+            <hraci>
+                <hrac id="2">
+                    <jmeno>LeBbron</jmeno>
+                    <prijmeni>James</prijmeni>
+                    <cisloDresu> 23 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="3">
+            <nazev>Brooklyn Nets</nazev>
+            <zkratka>BKN</zkratka>
+            <hraci>
+                <hrac id="3">
+                    <jmeno> Kyrie </jmeno>
+                    <prijmeni>Irving</prijmeni>
+                    <cisloDresu> 11 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="4">
+            <nazev>Chicago</nazev>
+            <zkratka>CHI</zkratka>
+            <hraci>
+                <hrac id="4">
+                    <jmeno>Tomas</jmeno>
+                    <prijmeni>Satoransky</prijmeni>
+                    <cisloDresu> 31 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="5">
+            <nazev>Dallas Mavericks</nazev>
+            <zkratka>DAL</zkratka>
+            <hraci>
+                <hrac id="5">
+                    <jmeno>Luka</jmeno>
+                    <prijmeni>Doncic</prijmeni>
+                    <cisloDresu> 77 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="6">
+            <nazev>Milwaukee Bucks</nazev>
+            <zkratka>MIL</zkratka>
+            <hraci>
+                <hrac id="6">
+                    <jmeno>Giannis</jmeno>
+                    <prijmeni>Antetokounmpo</prijmeni>
+                    <cisloDresu> 34 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+        <tym id="12">
+            <nazev>Portland Trail Blazers</nazev>
+            <zkratka>POR</zkratka>
+            <hraci>
+                <hrac id="7">
+                    <jmeno>Damian</jmeno>
+                    <prijmeni>Lillard</prijmeni>
+                    <cisloDresu> 0 </cisloDresu>
+                </hrac>
+            </hraci>
+        </tym>
+    </tymy>
+    <zapasy sezonaZacatek="2020-09-01" sezonaKonec="2021-06-30">
+        <zapas>
+            <domaci id="2">Los Angles Lakers</domaci>
+            <hoste id="1">Golden State Warriors</hoste>
+            <datum>2021-05-21</datum>
+            <vysledneSkore>
+                <domaci> 2 </domaci>
+                <hoste> 8 </hoste>
+            </vysledneSkore>
+            <prubeh>
+                <ctvrtina poradi="1">
+                    <kos>
+                        <cas> 00:15 </cas>
+                        <body> 3 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                    <kos>
+                        <cas> 00:23 </cas>
+                        <body> 2 </body>
+                        <tym>Los Angles Lakers</tym>
+                        <hrac id="2"> LeBron James </hrac>
+                    </kos>
+                    <faul typ="osobni">
+                        <cas> 00:32 </cas>
+                        <hrac id="2"> LeBron James </hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:32 </cas>
+                        <body> 1 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                    <faul typ="osobni">
+                        <cas> 00:33 </cas>
+                        <hrac id="2"> LeBron James </hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:33 </cas>
+                        <body> 2 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                </ctvrtina>
+                <ctvrtina poradi="2">
+                    <kos>
+                        <cas> 00:08 </cas>
+                        <body> 2 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                </ctvrtina>
+            </prubeh>
+        </zapas>
+        <zapas>
+            <domaci id="1">GSW</domaci>
+            <hoste id="2">Los Angles Lakers</hoste>
+            <datum>2021-01-21</datum>
+            <vysledneSkore>
+                <domaci> 5 </domaci>
+                <hoste> 6 </hoste>
+            </vysledneSkore>
+            <prubeh>
+                <ctvrtina poradi="1">
+                    <kos>
+                        <cas> 00:23 </cas>
+                        <body> 2 </body>
+                        <tym>Los Angles Lakers</tym>
+                        <hrac id="2"> LeBron James </hrac>
+                    </kos>
+                    <faul typ="osobni">
+                        <cas> 00:32 </cas>
+                        <hrac id="2">LeBron James</hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:32 </cas>
+                        <body> 1 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1">Draymond Green</hrac>
+                    </kos>
+                    <faul typ="osobni">
+                        <cas> 00:33 </cas>
+                        <hrac id="2">LeBron James</hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:33 </cas>
+                        <body> 2 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1">Draymond Green</hrac>
+                    </kos>
+                </ctvrtina>
+                <ctvrtina poradi="2">
+                    <kos>
+                        <cas> 00:08 </cas>
+                        <body> 2 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1">Draymond Green</hrac>
+                    </kos>
+                </ctvrtina>
+                <ctvrtina poradi="3">
+                    <faul typ="osobni">
+                        <cas>00:00</cas>
+                        <hrac id="8">Stephen Curry</hrac>
+                    </faul>
+                    <kos>
+                        <cas>00:00</cas>
+                        <body> 2 </body>
+                        <tym>LAL</tym>
+                        <hrac id="2"> Lebron James</hrac>
+                    </kos>
+                </ctvrtina>
+                <ctvrtina poradi="4">
+                    <faul typ="osobni">
+                        <cas>00:15</cas>
+                        <hrac id="8"> Stephen Curry</hrac>
+                    </faul>
+                    <kos>
+                        <cas>00:15</cas>
+                        <body> 2 </body>
+                        <tym>LAL</tym>
+                        <hrac id="2"> Lebron James</hrac>
+                    </kos>
+                </ctvrtina>
+            </prubeh>
+        </zapas>
+        <zapas>
+            <domaci id="2">LAL</domaci>
+            <hoste id="1">GSW</hoste>
+            <datum>2021-05-20</datum>
+            <vysledneSkore>
+                <domaci> 0 </domaci>
+                <hoste> 5 </hoste>
+            </vysledneSkore>
+            <prubeh>
+                <ctvrtina poradi="1">
+                    <faul typ="osobni">
+                        <cas> 00:32 </cas>
+                        <hrac id="2"> LeBron James </hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:32 </cas>
+                        <body> 1 </body>
+                        <tym>Golden State Warriors</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                    <faul typ="osobni">
+                        <cas> 00:33 </cas>
+                        <hrac id="2"> LeBron James </hrac>
+                    </faul>
+                    <kos>
+                        <cas> 00:33 </cas>
+                        <body> 2 </body>
+                        <tym>Golden State Warriors</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                </ctvrtina>
+                <ctvrtina poradi="2">
+                    <kos>
+                        <cas> 00:08 </cas>
+                        <body> 2 </body>
+                        <tym>GSW</tym>
+                        <hrac id="1"> Draymond Green </hrac>
+                    </kos>
+                </ctvrtina>
+            </prubeh>
+        </zapas>
+    </zapasy>
+</nba>

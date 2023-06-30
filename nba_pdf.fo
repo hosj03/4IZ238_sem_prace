@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" font-family="Arial" language="cs"><fo:layout-master-set><fo:simple-page-master master-name="a4" page-height="297mm" page-width="210mm" margin="10mm"><fo:region-body margin="5mm"/><fo:region-before extent="5mm"/><fo:region-after extent="5mm"/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="a4"><fo:static-content flow-name="xsl-region-before"><fo:block text-align="right">Jakub Hošek</fo:block></fo:static-content><fo:static-content flow-name="xsl-region-after"><fo:block text-align="center"><fo:page-number/>. Strana</fo:block></fo:static-content><fo:flow flow-name="xsl-region-body" font-family="Arial">
+    
+    <fo:block font-size="140%" font-weight="bold" id="idTymyTabulka">
+            NBA Týmy
+        </fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px"><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            ID
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Název
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Zkratka
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>1</fo:block></fo:table-cell><fo:table-cell><fo:block>Golden State Warriors</fo:block></fo:table-cell><fo:table-cell><fo:block>GSW</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu1" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>2</fo:block></fo:table-cell><fo:table-cell><fo:block>Los Angles Lakers</fo:block></fo:table-cell><fo:table-cell><fo:block>LAL</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu2" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>3</fo:block></fo:table-cell><fo:table-cell><fo:block>Brooklyn Nets</fo:block></fo:table-cell><fo:table-cell><fo:block>BKN</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu3" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>4</fo:block></fo:table-cell><fo:table-cell><fo:block>Chicago</fo:block></fo:table-cell><fo:table-cell><fo:block>CHI</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu4" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>5</fo:block></fo:table-cell><fo:table-cell><fo:block>Dallas Mavericks</fo:block></fo:table-cell><fo:table-cell><fo:block>DAL</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu5" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>6</fo:block></fo:table-cell><fo:table-cell><fo:block>Milwaukee Bucks</fo:block></fo:table-cell><fo:table-cell><fo:block>MIL</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu6" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>12</fo:block></fo:table-cell><fo:table-cell><fo:block>Portland Trail Blazers</fo:block></fo:table-cell><fo:table-cell><fo:block>POR</fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idHraciTymu12" color="blue">
+                                  Soupiska
+                              </fo:basic-link></fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block font-size="140%" font-weight="bold" space-before="1em">
+            Soupisky týmů
+        </fo:block><fo:block font-size="110%" font-weight="bold" id="idHraciTymu1" keep-with-next="always">Golden State Warriors</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Stephen</fo:block></fo:table-cell><fo:table-cell><fo:block>Curry</fo:block></fo:table-cell><fo:table-cell><fo:block> 30 </fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>Draymond</fo:block></fo:table-cell><fo:table-cell><fo:block>Green</fo:block></fo:table-cell><fo:table-cell><fo:block>23</fo:block></fo:table-cell></fo:table-row><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Klay</fo:block></fo:table-cell><fo:table-cell><fo:block>Thomson</fo:block></fo:table-cell><fo:table-cell><fo:block> 11 </fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>Andrew</fo:block></fo:table-cell><fo:table-cell><fo:block>Wiggins</fo:block></fo:table-cell><fo:table-cell><fo:block> 22 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+                
+                
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu2" keep-with-next="always">Los Angles Lakers</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>LeBbron</fo:block></fo:table-cell><fo:table-cell><fo:block>James</fo:block></fo:table-cell><fo:table-cell><fo:block> 23 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu3" keep-with-next="always">Brooklyn Nets</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block> Kyrie </fo:block></fo:table-cell><fo:table-cell><fo:block>Irving</fo:block></fo:table-cell><fo:table-cell><fo:block> 11 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu4" keep-with-next="always">Chicago</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Tomas</fo:block></fo:table-cell><fo:table-cell><fo:block>Satoransky</fo:block></fo:table-cell><fo:table-cell><fo:block> 31 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu5" keep-with-next="always">Dallas Mavericks</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Luka</fo:block></fo:table-cell><fo:table-cell><fo:block>Doncic</fo:block></fo:table-cell><fo:table-cell><fo:block> 77 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu6" keep-with-next="always">Milwaukee Bucks</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Giannis</fo:block></fo:table-cell><fo:table-cell><fo:block>Antetokounmpo</fo:block></fo:table-cell><fo:table-cell><fo:block> 34 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            <fo:block font-size="110%" font-weight="bold" id="idHraciTymu12" keep-with-next="always">Portland Trail Blazers</fo:block><fo:table border="1px solid gray" width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-column column-width="30%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Jméno
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Příjmení
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Číslo dresu
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Damian</fo:block></fo:table-cell><fo:table-cell><fo:block>Lillard</fo:block></fo:table-cell><fo:table-cell><fo:block> 0 </fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idTymyTabulka"><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:basic-link></fo:block>
+                
+            
+    <fo:block font-size="140%" font-weight="bold" page-break-before="always" id="idSezony2020-09-01">
+            Sezóna od 2020-09-01 do 2021-06-30</fo:block><fo:table border="1px solid gray" width="95%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="55%"/><fo:table-column column-width="18%"/><fo:table-column column-width="12%"/><fo:table-column column-width="10%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                            Týmy
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Datum konání
+                        </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                            Výsledek
+                        </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Los Angles Lakers : Golden State Warriors</fo:block></fo:table-cell><fo:table-cell><fo:block>2021-05-21</fo:block></fo:table-cell><fo:table-cell><fo:block> 2 : 8 </fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idPrubehZapasu212021-05-21" color="blue">
+                                    Průběh
+                                </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row><fo:table-cell><fo:block>Golden State Warriors : Los Angles Lakers</fo:block></fo:table-cell><fo:table-cell><fo:block>2021-01-21</fo:block></fo:table-cell><fo:table-cell><fo:block> 5 : 6 </fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idPrubehZapasu122021-01-21" color="blue">
+                                    Průběh
+                                </fo:basic-link></fo:block></fo:table-cell></fo:table-row><fo:table-row background-color="rgb(200, 200, 200)"><fo:table-cell><fo:block>Los Angles Lakers : Golden State Warriors</fo:block></fo:table-cell><fo:table-cell><fo:block>2021-05-20</fo:block></fo:table-cell><fo:table-cell><fo:block> 0 : 5 </fo:block></fo:table-cell><fo:table-cell><fo:block><fo:basic-link internal-destination="idPrubehZapasu212021-05-20" color="blue">
+                                    Průběh
+                                </fo:basic-link></fo:block></fo:table-cell></fo:table-row></fo:table-body></fo:table><fo:block font-size="120%" font-weight="bold" padding-top="1em" keep-with-next="always">
+            Průběhy zápasů
+        </fo:block><fo:block font-size="120%" font-weight="bold" padding-top="1em" keep-with-next="always" id="idPrubehZapasu212021-05-21">LAL : GSW</fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">1. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:15 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 3 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(0, 60, 150)" color="rgb(255, 255, 255)"><fo:table-cell><fo:block> 00:23 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 1 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">2. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:08 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="120%" font-weight="bold" padding-top="1em" keep-with-next="always" id="idPrubehZapasu122021-01-21">GSW : LAL</fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">1. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:23 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block>LeBron James</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(0, 60, 150)" color="rgb(255, 255, 255)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block>Draymond Green</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 1 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block>LeBron James</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(0, 60, 150)" color="rgb(255, 255, 255)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block>Draymond Green</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">2. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(0, 60, 150)" color="rgb(255, 255, 255)"><fo:table-cell><fo:block> 00:08 </fo:block></fo:table-cell><fo:table-cell><fo:block>Draymond Green</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">3. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block>00:00</fo:block></fo:table-cell><fo:table-cell><fo:block>Stephen Curry</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block>00:00</fo:block></fo:table-cell><fo:table-cell><fo:block> Lebron James</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">4. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block>00:15</fo:block></fo:table-cell><fo:table-cell><fo:block> Stephen Curry</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block>00:15</fo:block></fo:table-cell><fo:table-cell><fo:block> Lebron James</fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="120%" font-weight="bold" padding-top="1em" keep-with-next="always" id="idPrubehZapasu212021-05-20">LAL : GSW</fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">1. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:32 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 1 </fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(255, 90, 90)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block> LeBron James </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    faul
+                </fo:block></fo:table-cell><fo:table-cell><fo:block>osobni</fo:block></fo:table-cell></fo:table-row>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:33 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block><fo:block font-size="110%" font-weight="bold" padding-top="1em" keep-with-next="always">2. čtvrtina
+            </fo:block><fo:table width="90%" padding="1em" padding-top="5px" padding-bottom="5px" table-layout="fixed"><fo:table-column column-width="20%"/><fo:table-column column-width="40%"/><fo:table-column column-width="10%"/><fo:table-column column-width="20%"/><fo:table-header font-weight="bold"><fo:table-row><fo:table-cell><fo:block>
+                                Čas
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Hráč
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Akce
+                            </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                                Popis
+                            </fo:block></fo:table-cell></fo:table-row></fo:table-header><fo:table-body>
+                    <fo:table-row background-color="rgb(60, 255, 220)"><fo:table-cell><fo:block> 00:08 </fo:block></fo:table-cell><fo:table-cell><fo:block> Draymond Green </fo:block></fo:table-cell><fo:table-cell><fo:block>
+                    koš
+                </fo:block></fo:table-cell><fo:table-cell><fo:block> 2 </fo:block></fo:table-cell></fo:table-row>
+                </fo:table-body></fo:table><fo:block text-align="right" keep-with-previous="always"><fo:basic-link internal-destination="idSezony2020-09-01"><fo:block><fo:external-graphic src="url(file:///E:\Škola\VŠE\4. semestr\XML - Teorie a praxe značkovacích jazyků (4IZ238)\semestralni_prace\dum.png)" width="2.5%" height="5%" content-width="2.5%" content-height="3%" vertical-align="middle" text-align="center"/></fo:block></fo:basic-link></fo:block>
+</fo:flow></fo:page-sequence></fo:root>
